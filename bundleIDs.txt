@@ -1,7 +1,3 @@
-ch.ada.VSApp:com.microsoft.VSCode
-com.2X.2XClient:com.parallels.desktop.console
-com.anydesk.AnyDesk:com.philandro.anydesk
-com.appdynamic.AirServerConnect:com.pratikkumar.airserver-mac
 com.apple.AppStore:com.apple.AppStore
 com.apple.calculator:com.apple.calculator
 com.apple.camera:com.apple.Image_Capture
@@ -36,7 +32,11 @@ com.apple.SiriViewService:com.apple.siri.launcher
 com.apple.stocks:com.apple.stocks
 com.apple.tv:com.apple.TV
 com.apple.VoiceMemos:com.apple.VoiceMemos
-com.atebits.Tweetie2:com.google.Chrome.app.jgeocpdicgmkeemopbanhokmhcgcflmi
+ws.hbang.Terminal:com.apple.Terminal
+ch.ada.VSApp:com.microsoft.VSCode
+com.2X.2XClient:com.parallels.desktop.console
+com.anydesk.AnyDesk:com.philandro.anydesk
+com.appdynamic.AirServerConnect:com.pratikkumar.airserver-mac
 com.atebits.Twitter2:com.twitter.twitter-mac
 com.authy:com.authy.authy-mac
 com.axosoft.glo:com.axosoft.gitkraken
@@ -90,4 +90,5 @@ org.jellyfin.expo:Jellyfin.Server
 org.videolan.vlc-ios:org.videolan.vlc
 ph.telegra.Telegraph:ru.keepcoder.Telegram
 us.sitesucker.sitesucker:us.sitesucker.mac.sitesucker
-ws.hbang.Terminal:com.apple.Terminal
+com.atebits.Tweetie2:com.google.Chrome.app.jgeocpdicgmkeemopbanhokmhcgcflmi
+com.panic.iOS.Transmit:com.panic.Transmit
