@@ -93,8 +93,33 @@ echo -e "${nameColor} /___|_|  |_| |_|\___|_| |_| |_|\___|${Color_Off}";
 echo -e "${nameColor}                                     ${Color_Off}";
 echo -e "${nameColor}                                     ${Color_Off}";
 
-BUNDLEIDS="https://raw.githubusercontent.com/JosephShenton/zTheme/master/bundleIDs.txt";
-IN=$(wget -O- -q $BUNDLEIDS)
+# Offline Mode
+
+curl -L -s http://google.com > /dev/null
+
+if [ $? -eq 0 ]; then
+    # ONLINE
+    BUNDLEIDS="https://raw.githubusercontent.com/JosephShenton/zTheme/master/bundleIDs.txt";
+    curl -L -s $BUNDLEIDS > "bundleIDs.txt"
+    IN=$(cat "bundleIDs.txt")
+else
+    # OFFLINE
+    if [[ $(find "bundleIDs.txt" -mtime +2 -print) ]]; then
+        if [ "$1" != "--force" ] || [ "$1" != "-f" ]; then
+            echo "Whilst zTheme supports offline usage, you are required"
+            echo "to go online and run the script once every two days to"
+            echo "keep the bundle id list up-to-date."
+            echo -e "\n"
+            echo "To bypass this you can use the following command."
+            echo "./zTheme --force"
+            exit;
+        fi
+    fi
+
+    BUNDLEIDS="bundleIDs.txt";
+    IN=$(cat $BUNDLEIDS)
+
+fi
 
 defaultName="Untitled"
 defaultAuthor=$(dscl . -read "/Users/$(who am i | awk '{print $1}')" RealName | sed -n 's/^ //g;2p')
