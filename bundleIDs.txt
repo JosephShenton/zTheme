@@ -92,3 +92,4 @@ ph.telegra.Telegraph:ru.keepcoder.Telegram
 us.sitesucker.sitesucker:us.sitesucker.mac.sitesucker
 com.atebits.Tweetie2:com.google.Chrome.app.jgeocpdicgmkeemopbanhokmhcgcflmi
 com.panic.iOS.Transmit:com.panic.Transmit
+com.panic.DietCoda:com.panic.Coda2
