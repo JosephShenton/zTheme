@@ -15,6 +15,8 @@ Download zTheme
 chmod +x zTheme
 
 ./zTheme
+
+iOS Location is your iOS Theme DEB file.
 ```
 
 # What it does
