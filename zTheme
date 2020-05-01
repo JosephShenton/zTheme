@@ -242,7 +242,7 @@ while IFS= read -ra LINE; do
                     macOSName="${clean/${BNID[0]}/${BNID[1]}}"
                     iOSName=$file;
                     # echo "$PWD";
-                    mv "$PWD/$iOSName" "$PWD/../$macOSName"
+                    cp "$PWD/$iOSName" "$PWD/../$macOSName"
                 fi
             done
         done <<< "$LINE"
@@ -261,3 +261,11 @@ mv "/Users/$USER/Desktop/zTheme/$themeName" "/Users/$USER/Desktop/zTheme/$themeN
 
 echo -e "${BBlue}Conversion finished!${Color_Off}"
 echo -e "${BIPurple}$themeName is located at:${Color_Off} /Users/$USER/Desktop/zTheme/$themeName.bundle"
+read -p "Would you like to copy your theme to the ThemeKit folder? " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    yes | cp -rf "/Users/$USER/Desktop/zTheme/$themeName.bundle" "/Users/$USER/ThemeKit/$themeName.bundle"
+    echo "Done! Opening ThemeKit"
+    open /Applications/ThemeKit.app/
+fi
