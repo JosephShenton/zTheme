@@ -34,6 +34,7 @@ com.apple.tv:com.apple.TV
 com.apple.VoiceMemos:com.apple.VoiceMemos
 ws.hbang.Terminal:com.apple.Terminal
 ch.ada.VSApp:com.microsoft.VSCode
+ch.ada.VSApp:com.microsoft.VSCodeInsiders
 com.2X.2XClient:com.parallels.desktop.console
 com.anydesk.AnyDesk:com.philandro.anydesk
 com.appdynamic.AirServerConnect:com.pratikkumar.airserver-mac
