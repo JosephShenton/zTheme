@@ -149,7 +149,7 @@ read -p "Theme URL ($defaultURL): " themeURL
 themeURL=${themeURL:-"$defaultURL"}
 
 # Set iOS Theme Location
-read -p "iOS Theme Location (REQUIRED): " iOSTheme
+read -p "iOS Theme DEB Location (REQUIRED): " iOSTheme
 iOSTheme=$iOSTheme
 
 resetScreen() {
