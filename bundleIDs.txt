@@ -82,7 +82,7 @@ com.xk72.Charles:com.xk72.Charles
 com.xvpn:com.d462kwetwe.x-vpn
 com.yacreader.yacreader:com.yacreader.YACReader
 com.zerotier.ZeroTier-One:com.zerotier.ZeroTier-One
-kjc.loader-large:kim.cracksby.checkra1n
+kjc.loader:kim.cracksby.checkra1n
 mega.ios:mega.mac
 net.shinyfrog.bear-iOS:net.shinyfrog.bear
 net.whatsapp.WhatsApp:WhatsApp
