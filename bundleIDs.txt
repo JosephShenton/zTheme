@@ -95,5 +95,13 @@ com.atebits.Tweetie2:com.google.Chrome.app.jgeocpdicgmkeemopbanhokmhcgcflmi
 com.panic.iOS.Transmit:com.panic.Transmit
 com.panic.DietCoda:com.panic.Coda2
 com.anemonetheming.anemone:com.mtac.ThemeKit
-SBBadgeBG@2x.png:notificationBadge.png
-SBBadgeBG@2x.png:notificationBadge@2x.png
+SBBadgeBG@2x:notificationBadge.png
+SBBadgeBG@2x:notificationBadge@2x.png
+com.trashEmpty.light:trashEmpty_light.png
+com.trashEmpty.light:trashEmpty_light@2x.png
+com.trashFull.light:trashFull_light.png
+com.trashFull.light:trashFull_light@2x.png
+com.trashEmpty.dark:trashEmpty_dark.png
+com.trashEmpty.dark:trashEmpty_dark@2x.png
+com.trashFull.dark:trashFull_dark.png
+com.trashFull.dark:trashFull_dark@2x.png
