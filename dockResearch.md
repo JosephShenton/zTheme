@@ -5,6 +5,15 @@
 
 ---
 
+## My Setup
+
+```
+Trash Light (Full): com.xiaojukeji.esp-large.png
+Trash Dark (Full): com.xiaojukeji.didi-large.png
+```
+
+---
+
 # Notification Badges
 
 ```
