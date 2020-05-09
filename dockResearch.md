@@ -14,6 +14,23 @@ Trash Dark (Full): com.xiaojukeji.didi-large.png
 
 ---
 
+## Recommended IDs for Trash and Notification Badge (Used in zTheme currently)
+
+```
+Notification Badge 1x: com.notificationBadge.1x:notificationBadge.png
+Notification Badge 2x: com.notificationBadge.2x:notificationBadge@2x.png
+Trash Empty (Light) 1x: com.trashEmptyLight.1x:trashEmpty_light.png
+Trash Empty (Light) 2x: com.trashEmptyLight.2x:trashEmpty_light@2x.png
+Trash Full (Light) 1x: com.trashFullLight.1x:trashFull_light.png
+Trash Full (Light) 2x: com.trashFullLight.2x:trashFull_light@2x.png
+Trash Empty (Dark) 1x: com.trashEmptyDark.1x:trashEmpty_dark.png
+Trash Empty (Dark) 2x: com.trashEmptyDark.2x:trashEmpty_dark@2x.png
+Trash Full (Dark) 1x: com.trashFullDark.1x:trashFull_dark.png
+Trash Full (Dark) 2x: com.trashFullDark.2x:trashFull_dark@2x.png
+```
+
+---
+
 # Notification Badges
 
 ```
