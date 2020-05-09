@@ -2,6 +2,7 @@
 zTheme converts iOS themes into macOS Theme Kit Themes
 
 ## Note
+> App is not finished yet.
 > I will gladly accept any pull request which improves this code, provides further functionality or updates the list of bundle ids.
 
 # Installation
