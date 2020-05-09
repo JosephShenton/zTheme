@@ -6,6 +6,8 @@ zTheme converts iOS themes into macOS Theme Kit Themes
 
 > I will gladly accept any pull request which improves this code, provides further functionality or updates the list of bundle ids.
 
+> zTheme has implement pre-support for Trash Icons and Notification Badge icons. It should work out of the box if @ThemeKitApp implement it the way we recommended. [Recommendations](https://github.com/JosephShenton/zTheme/blob/master/dockResearch.md)
+
 # Installation
 
 Download zTheme
@@ -29,6 +31,6 @@ zTheme requires the DEB file of the iOS theme to work.
 
 zTheme will output into a folder called zTheme on your desktop.
 
-# Built for macOS and [ThemeKit](https://github.com/MTACS/ThemeKit)
+# Built for macOS and [ThemeKit](https://github.com/ThemeKitApp/ThemeKit)
 
 ### Copyright Joseph Shenton 2020
