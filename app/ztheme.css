@@ -1,0 +1,120 @@
+* {
+    font-family: -apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Default */
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.titlebar-button {
+    -webkit-app-region: no-drag;
+}
+
+body {
+    padding-top: 25px;
+    z-index: 0;
+}
+
+#titleBar {
+    width: 100%;
+    height: 38px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 10;
+    margin-top: -1px;
+    top: 0;
+    left: 0;
+    /* webkitAppRegion: drag; */
+    -webkit-app-region: drag;
+}
+
+#titleBarTitle {
+    width: 100%;
+    height: 38px;
+    color: #B0B0B0;
+    /* fontSize: 14.2px; */
+    font-size: 14.2px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 9px;
+}
+
+.gradientCard {
+    height: 77px;
+    max-height: 77px;
+    line-height: 77px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.zTheme {
+    background: linear-gradient(167.47deg, #FD7C7C 0%, #FF6E6E 95.89%);
+    /* background: linear-gradient(167.47deg, #92C7A3 0%, #7BDEA4 95.89%); */
+    /* background: linear-gradient(167.47deg, #FFA881 0%, #E2617F 95.89%); */
+}
+
+.form {
+    margin-top: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    border: none;
+}
+
+.file-cta, .file-name {
+    border: none;
+}
+
+.light .input {
+    box-shadow: 0 0px 20px -2px rgba(10, 10, 10, 0.06);
+}
+
+.light .file {
+    box-shadow: 0 0px 20px -2px rgba(10, 10, 10, 0.06);
+}
+
+/* Dark */
+
+.dark ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9c9c9c;
+    opacity: 1; /* Firefox */
+}
+
+html.dark {
+    background-color: #1D1D1D;
+}
+
+.dark body {
+    background-color: #1D1D1D;
+}
+
+.dark #titleBar {
+    background-color: #1D1D1D;
+}
+
+.dark .form .label {
+    color: #FFF;
+}
+
+.dark .input {
+    background: #3a3a3a;
+    color: #FFF;
+}
+
+.dark .file-cta {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+.dark .file-name {
+    background: #272727;
+    color: #9c9c9c;
+}

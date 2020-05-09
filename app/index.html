@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>zTheme</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="ztheme.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+      window.__setTheme = () => {
+        let userTheme = localStorage.user_theme
+        let OSTheme = localStorage.os_theme
+        let defaultTheme = 'light'
+
+        var root = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
+
+        root.setAttribute('class', OSTheme);
+      }
+  
+      __setTheme()
+    </script>
+  </head>
+  <body>
+    <div id="div1" style="height: 100%;position:relative;">
+    <div id="div2" style="max-height:100%;overflow:auto;">
+      <div id="div3" style="height:auto;">
+        <div class="form">
+          <div class="field">
+            <label class="label">Designer</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Joseph Shenton (@CEOShenton)" id="themeAuthor">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="My Awesome Theme" id="themeName">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Version</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="1.0.0" id="themeVersion">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Bundle ID</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="com.joseph.theme" id="themeBundle">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Depiction URL</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="https://example.com/com.joseph.theme/" id="themeURL">
+            </div>
+          </div>
+          <label class="label">Original Theme DEB</label>
+          <div class="file has-name">
+            <label class="file-label">
+              <input class="file-input" type="file" name="resume" id="themeDEB">
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Choose DEB
+                </span>
+              </span>
+              <span class="file-name">
+                Theme.deb
+              </span>
+            </label>
+          </div>
+          <br>
+          <label class="checkbox">
+            <input type="checkbox" id="themeDisplay">
+            Uses Display Icons
+          </label>
+          <br>
+          <br>
+          <div>
+            <div class="field is-grouped">
+              <button class="button is-link is-fullwidth" style="font-weight: 600;">Convert & Save</button>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      var windowTopBar = document.createElement('div');
+      windowTopBar.classList.add(localStorage.os_theme);
+      windowTopBar.id = "titleBar"
+      document.body.appendChild(windowTopBar);
+      var title = document.createElement("p");
+      title.id = "titleBarTitle";
+      title.innerText = "zTheme";
+      document.getElementById("titleBar").appendChild(title);
+
+      const exec = require('child_process').exec;
+
+      function execute(command, callback) {
+        exec(command, (error, stdout, stderr) => { 
+            callback(stdout); 
+        });
+      };
+      
+      // execute("./defaultName.sh", (output) => {
+      //   document.getElementById("themeAuthor").value = output;
+      // });
+
+      const fullName = require('fullname');
+
+      (async () => {
+        console.log(await fullName());
+        //=> 'Sindre Sorhus'
+        document.getElementById("themeAuthor").value = await fullName();
+      })();
+
+      function convertTheme() {
+        execute('./zTheme', (output) => {
+          console.log(output);
+        });
+      }
+
+    </script>
+  </body>
+</html>
