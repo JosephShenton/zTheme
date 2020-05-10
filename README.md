@@ -35,7 +35,7 @@ zTheme is fast, lightweight and the recommended tool for converting themes by [T
 
 ### Getting Started
 
-First, visit [the Releases page](https://github.com/JosephShenton/zTheme/releases/latest) to get the latest version of ThemeKit.
+First, visit [the Releases page](https://github.com/JosephShenton/zTheme/releases/latest) to get the latest version of zTheme.
 
 
 #### Before Running zTheme (Important):
