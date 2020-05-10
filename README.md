@@ -70,6 +70,26 @@ Once you have provided that information it will ask you to choose a theme.
 
 Finally, it will convert the theme and ask if you want to copy it to the ThemeKit folder and open ThemeKit.
 
+## Running via the app
+
+### Prerequisites
+
+* NodeJS
+* NPM
+* Electron
+
+
+### Setup & Usage
+```
+
+cd /path/to/zTheme/app/folder
+
+npm install
+
+npm start
+
+```
+
 
 #### README Credits
 
