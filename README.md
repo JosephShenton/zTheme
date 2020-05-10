@@ -35,6 +35,10 @@ zTheme is fast, lightweight and the recommended tool for converting themes by [T
 
 First, visit [the Releases page](https://github.com/JosephShenton/zTheme/releases/latest) to get the latest version of zTheme.
 
+Depending on your usage either the app or binary. 
+
+**It is recommended you download the binary if your theme deb contains multiple themes.**
+
 
 #### Before Running zTheme (Important):
 
