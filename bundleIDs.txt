@@ -95,6 +95,7 @@ com.atebits.Tweetie2:com.google.Chrome.app.jgeocpdicgmkeemopbanhokmhcgcflmi
 com.panic.iOS.Transmit:com.panic.Transmit
 com.panic.DietCoda:com.panic.Coda2
 com.anemonetheming.anemone:com.mtac.ThemeKit
+is.workflow.my.app:com.bitnami.manager
 com.notificationBadge.1x:notificationBadge.png
 com.notificationBadge.2x:notificationBadge@2x.png
 com.trashEmptyLight.1x:trashEmpty_light.png
