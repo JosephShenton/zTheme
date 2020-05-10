@@ -1,37 +1,71 @@
+<p align="center">
+  <a align="center" href="https://github.com/JosephShenton/zTheme" target="_blank"><img src="https://github.com/JosephShenton/zTheme/blob/master/logo.png?raw=true" width="350px" height="350px"></a>
+</p>
+
 # zTheme
-zTheme converts iOS themes into macOS Theme Kit Themes
-![Logo](https://github.com/JosephShenton/zTheme/blob/master/logo.png?raw=true)
 
-## Note
-> App is not finished yet.
+Your iOS theme is now on macOS.
+<p align="center">
+  <a href="https://github.com/JosephShenton/zTheme/issues" align="center"><img src="https://img.shields.io/github/issues/JosephShenton/zTheme"></a>
+  <a href="https://github.com/JosephShenton/zTheme/network" align="center"><img src="https://img.shields.io/github/forks/JosephShenton/zTheme"></a>
+  <a href="https://github.com/JosephShenton/zTheme/stargazers" align="center"><img src="https://img.shields.io/github/stars/JosephShenton/zTheme"></a>
+  <a href="" align="center"><img src="https://img.shields.io/badge/Version-1.0.1-informational"></a>
 
-> I will gladly accept any pull request which improves this code, provides further functionality or updates the list of bundle ids.
+</p>
 
-> zTheme has implement pre-support for Trash Icons and Notification Badge icons. It should work out of the box if @ThemeKitApp implement it the way we recommended. [Recommendations](https://github.com/JosephShenton/zTheme/blob/master/dockResearch.md)
+# What is zTheme?
+
+
+zTheme is a macOS app/script which allows you to easily convert any iOS theme into a macOS Theme for use with [ThemeKit](https://themekit.io).
+
+zTheme is fast, lightweight and the recommended tool for converting themes by [ThemeKit](https://themekit.io).
+
+<p align="center">
+  <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/dark.png?raw=true" alt="dark"></a></p>
+  
+  <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light"></a></p>
+</p>
 
 # Installation
 
-Download zTheme
+### Getting Started
 
-# Usage
+First, visit [the Releases page](https://github.com/JosephShenton/zTheme/releases/latest) to get the latest version of ThemeKit.
 
-```bash
-# Only do this the first time.
-chmod +x zTheme
+
+#### Before Running zTheme (Important):
+
+Currently, the zTheme app will default to the first `.theme` file inside your deb. I am working on a fix for this.
+
+For now, you can use the zTheme binary and it will ask you which theme to convert.
+
+# Converting Themes
+
+zTheme automatically fetches the latest list of Bundle IDs from our GitHub repository. If you happen to be offline, it will use the one it has saved but only for two days. After that you are required to go online or use the `--force` flag.
+
+To run the zTheme binary, it is pretty simple.
+
+You can either run it in Terminal or just double click the binary.
+
+### Running via Terminal
+
+```
+
+cd /path/to/folder/containing/zTheme/binary
 
 ./zTheme
 
-iOS Location is your iOS Theme DEB file.
 ```
 
-# What it does
+### All Methods of Binary Usage
 
-zTheme takes a list of bundle ids from this repository and scans the pre-existing iOS Theme for matching bundle ids and replaces it with the corresponding macOS bundle id if it is known.
+zTheme will prompt you to enter your Theme's name, Author, Version, Bundle ID, Theme (Depiction) URL, and iOS Theme Location (Theme DEB File).
 
-zTheme requires the DEB file of the iOS theme to work.
+Once you have provided that information it will ask you to choose a theme. 
 
-zTheme will output into a folder called zTheme on your desktop.
+Finally, it will convert the theme and ask if you want to copy it to the ThemeKit folder and open ThemeKit.
 
-# Built for macOS and [ThemeKit](https://github.com/ThemeKitApp/ThemeKit)
 
-### Copyright Joseph Shenton 2020
+#### README Credits
+
+[ThemeKit](https://github.com/ThemeKitApp/ThemeKit)
