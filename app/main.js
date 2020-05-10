@@ -1,5 +1,12 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
+const path = require('path')
+const url = require('url')
+const iconUrl = url.format({
+ pathname: path.join(__dirname, 'zTheme.icns'),
+ protocol: 'file:',
+ slashes: true
+})
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -12,9 +19,10 @@ function createWindow () {
     height: 650,
     titleBarStyle: 'hiddenInset',
     title: "zTheme",
+    icon: iconUrl,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
   })
 
   // and load the index.html of the app.

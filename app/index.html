@@ -82,7 +82,7 @@
           <br>
           <div>
             <div class="field is-grouped">
-              <button class="button is-link is-fullwidth" style="font-weight: 600;">Convert & Save</button>
+              <button class="button is-link is-fullwidth" onclick="convertTheme();" style="font-weight: 600;">Convert & Save</button>
             </div>
           </div>
           <br>
@@ -123,8 +123,19 @@
       })();
 
       function convertTheme() {
-        execute('./zTheme', (output) => {
-          console.log(output);
+        let author = document.getElementById("themeAuthor").value;
+        let name = document.getElementById("themeName").value;
+        let version = document.getElementById("themeVersion").value;
+        let bundle = document.getElementById("themeBundle").value;
+        let url = document.getElementById("themeURL").value;
+        let deb = document.getElementById("themeDEB").files[0].path;
+        var features = "false";
+        if (document.getElementById("themeDisplay").checked == true) {
+          features = "true";
+        }
+
+        execute('./zThemeCLI.sh -a "' + author + '" -n "' + name + '" -v "' + version + '" -b "' + bundle + '" -u "' + url + '" -s "0" -d "' + deb + '" -f "' + features + '"', (output) => {
+          window.alert(output);
         });
       }
 
