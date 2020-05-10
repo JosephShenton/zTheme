@@ -21,9 +21,14 @@ zTheme is a macOS app/script which allows you to easily convert any iOS theme in
 zTheme is fast, lightweight and the recommended tool for converting themes by [ThemeKit](https://themekit.io).
 
 <p align="center">
-  <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/dark.png?raw=true" alt="dark"></a></p>
+  <p align="center">
+  	<a align="center">
+  		<img src="https://github.com/JosephShenton/zTheme/blob/master/dark.png?raw=true" alt="dark" width="50%">
+  		<img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light" width="50%">
+  	</a>
+  </p>
   
-  <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light"></a></p>
+  <!-- <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light"></a></p> -->
 </p>
 
 # Installation
