@@ -1,5 +1,6 @@
 # zTheme
 zTheme converts iOS themes into macOS Theme Kit Themes
+![Logo](https://github.com/JosephShenton/zTheme/blob/master/logo.png?raw=true)
 
 ## Note
 > App is not finished yet.
