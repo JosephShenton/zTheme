@@ -55,11 +55,9 @@ You can either run it in Terminal or just double click the binary.
 ### Running via Terminal
 
 ```
-
 cd /path/to/folder/containing/zTheme/binary
 
 ./zTheme
-
 ```
 
 ### All Methods of Binary Usage
@@ -81,13 +79,11 @@ Finally, it will convert the theme and ask if you want to copy it to the ThemeKi
 
 ### Setup & Usage
 ```
-
 cd /path/to/zTheme/app/folder
 
 npm install
 
 npm start
-
 ```
 
 
