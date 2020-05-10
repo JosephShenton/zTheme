@@ -27,8 +27,6 @@ zTheme is fast, lightweight and the recommended tool for converting themes by [T
   		<img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light" width="33%">
   	</a>
   </p>
-  
-  <!-- <p align="center"><a align="center"><img src="https://github.com/JosephShenton/zTheme/blob/master/light.png?raw=true" alt="light"></a></p> -->
 </p>
 
 # Installation
